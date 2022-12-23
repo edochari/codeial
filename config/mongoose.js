@@ -10,4 +10,4 @@ db.once('open',function(){
     console.log("Database is connected");
 })
 
-module.exports=db;
+module.exports=db; 

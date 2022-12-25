@@ -2,8 +2,12 @@ const express=require('express');
 const app=express();
 const port=8000;
 const expressLayouts=require('express-ejs-layouts');
+const cookie=require('cookie-parser');
 const db=require('./config/mongoose');
 app.use(expressLayouts);
+app.use(express.urlencoded());
+app.use(cookie());
+
 
 app.use(express.static("./assets"));
 // use express router
